@@ -11,7 +11,7 @@ function Input(props){
   return <input type="text" placeholder={props.text}/>;
 }
 
-function App() {
+function Login() {
   return (
     <div className ="row">
       <div className ="block">
@@ -31,4 +31,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
