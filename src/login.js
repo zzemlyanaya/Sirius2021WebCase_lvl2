@@ -1,5 +1,5 @@
 import domore from './drawable/domoreim.svg';
-import './App.css';
+import './login.css';
 
 function Header() {
   return <h1>1more TODO list</h1>;
