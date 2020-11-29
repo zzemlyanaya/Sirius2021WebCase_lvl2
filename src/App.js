@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import domore from './drawable/domoreim.svg';
 import './App.css';
+
+function Header() {
+  return <h1>1more TODO list</h1>;
+}
+function Label(props){
+  return <h3>{props.label} </h3>;
+}
+function Input(props){
+  return <input type="text" placeholder={props.text}/>;
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className ="row">
+      <div className ="block">
+      <div className="content">
+        <Header />
+        <Label label="Email" />
+        <Input text="Enter email..." />
+        <Label label ="Password" />
+        <Input text="Enter password..."/>
+        <button className="button" onclick="/tasks">Login</button>
+      </div>
+      </div>
+      <div clasName ="block">
+        <img src={domore}/>
+      </div>
     </div>
   );
 }
